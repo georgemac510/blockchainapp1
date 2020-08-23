@@ -1,0 +1,18 @@
+john@john-ThinkPad-T450:~/blockchainapp2/blockchainapp2$ truffle networks
+
+The following networks are configured to match any network id ('*'):
+
+    development
+
+Closely inspect the deployed networks below, and use `truffle networks --clean` to remove any networks that don't match your configuration. You should not use the wildcard configuration ('*') for staging and production networks for which you intend to deploy your application.
+
+Network: UNKNOWN (id: 5777)
+  Exchange: 0x7ea7eA4d9ad86026D1cd57441a746D357FFfB2A4
+  Token: 0xe8f0AC52DfEd5275A364a51a3B48138250beEc46
+
+Network: kovan (id: 42)
+  Exchange: 0x9B3ECDF72B9D02F3473E2bF01CA0f8641F87724d
+  Token: 0xc50Ab8B175F4257DEe8Cd8bcD44260F3acc19De4
+
+john@john-ThinkPad-T450:~/blockchainapp2/blockchainapp2$ 
+
