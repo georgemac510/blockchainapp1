@@ -3,7 +3,7 @@ require('babel-polyfill');
 require('dotenv').config();
 const HDWalletProvider = require("@truffle/hdwallet-provider");
 // const privateKeys = [process.env.PRIVATE_KEY_ONE, process.env.PRIVATE_KEY_TWO] || ""
-const privateKeys = process.env.PRIVATE_KEYS || ""
+const privateKey = process.env.PRIVATE_KEY || ""
 
 module.exports = {
 
@@ -13,16 +13,16 @@ module.exports = {
       port: 8545,
       network_id: "*" // Match any network id
     },
-    kovan: {
+    goerli: {
       provider: function() {
         return new HDWalletProvider(
-          privateKeys.split(','), // Array of account private keys
-          `https://kovan.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
+          privateKey.split(','), // Array of account private keys
+          `https://goerli.infura.io/v3/${process.env.INFURA_API_KEY}`// Url to an Ethereum Node
         )
       },
       gas: 5000000,
       gasPrice: 25000000000,
-      network_id: 42
+      network_id: 5
     }
   },
 
@@ -39,3 +39,5 @@ module.exports = {
     }
   }
 }
+
+
