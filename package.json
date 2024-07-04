@@ -5,7 +5,7 @@
   "author": "jmclaughlin@mckurzcapital.com",
   "private": true,
   "engines": {
-    "node": "14.x"
+    "node": "16.x"
   },
   "dependencies": {
     "@metamask/legacy-web3": "^1.0.1",
