@@ -37,11 +37,11 @@ export const loadWeb3 = async (dispatch) => {
   let web3
   if (window.ethereum) {
     web3 = new Web3(window.ethereum)
-    await window.ethereum.enable()
+    await window.eth_requestAccounts
   }
-  // else if (window.web3) {
-  //   web3 = new Web3(window.web3.currentProvider)
-  // }
+  else if (window.web3) {
+    web3 = new Web3(window.web3.currentProvider)
+  }
   else {
     // Do nothing....
   }
@@ -50,9 +50,12 @@ export const loadWeb3 = async (dispatch) => {
 }
 
 export const loadAccount = async (web3, dispatch) => {
-  const accounts = await web3.eth.getAccounts()
-  const account = accounts[0]
+  const accounts = await window.ethereum.request({ method: 'eth_requestAccounts' });
+
+  const account = web3.utils.toChecksumAddress(accounts[0])
+
   dispatch(web3AccountLoaded(account))
+  
   return account
 }
 
