@@ -18998,10 +18998,17 @@
       "links": {},
       "address": "0x7ea7eA4d9ad86026D1cd57441a746D357FFfB2A4",
       "transactionHash": "0x9ea57dff888a68617fdc7d63a6208ba29c1ca2b7785824a28550b63960a75bb2"
+    },
+    "11155111": {
+      "events": {},
+      "links": {},
+      "address": "0x38716D3E05C11dE5D5C34b5772fD0873A2FEFa03",
+      "transactionHash": "0x1d7de2f5edfc556e395b1827f6f7ffaf8c9df163e6697f1985ed0631b1ba12e5"
     }
   },
   "schemaVersion": "3.4.1",
-  "updatedAt": "2023-01-21T00:12:58.709Z",
+  "updatedAt": "2024-07-04T13:25:25.817Z",
+  "networkType": "ethereum",
   "devdoc": {
     "methods": {}
   },
